@@ -4,11 +4,12 @@
 
 #include <string>
 #include <iostream>
+using namespace std;
 
 class Product
 {
 private:
-    std::string name;
+    string name;
     double price;
 
 public:

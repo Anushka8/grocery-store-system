@@ -5,7 +5,7 @@
 
 // vector is a dynamic array from STL (Standard Template Library)
 #include <vector>
-#include "product.h"
+#include "Product.h"
 using namespace std;
 
 class Order
