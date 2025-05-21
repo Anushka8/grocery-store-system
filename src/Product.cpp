@@ -1,15 +1,22 @@
 #include "Product.h"
-
+#include <iostream>
 using namespace std;
 
-Product::Product(const string &name, double price, int quantity) : name(name), price(price), quantity(quantity) {}
+Product::Product(const string &name, double price) : name(name), price(price) {}
 
-void Product::display() const
+string Product::getName() const
 {
-    cout << "Product: " << name << ", Price: $" << price << ", Quantity: " << quantity << endl;
+    return name;
 }
 
-void Product::updateQuantity(int qty)
+double Product::getPrice() const
 {
-    quantity += qty;
+    return price;
+}
+
+// a function that just reads/displays/calculates data without modifying any member variables
+// should be defined as const. This guarantees that it will not modify any member variables
+void Product::display() const
+{
+    cout << "Product: " << name << ", Price: $" << price << endl;
 }

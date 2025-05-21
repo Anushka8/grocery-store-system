@@ -10,11 +10,11 @@ class Product
 private:
     std::string name;
     double price;
-    int quantity;
 
 public:
-    Product(const std::string &name, double price, int quantity);
+    Product(const std::string &name, double price);
+    string getName() const;
+    double getPrice() const;
     void display() const;
-    void updateQuantity(int qty);
 };
 #endif
