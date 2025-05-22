@@ -17,5 +17,6 @@ public:
     string getName() const;
     double getPrice() const;
     void display() const;
+    ~Product();
 };
 #endif

@@ -12,3 +12,7 @@ void Cashier::displayDetails() const
     Employee::displayDetails();
     cout << ", Counter Number: " << counterNumber << endl;
 }
+
+Cashier::~Cashier() {
+    cout << "Cashier destroyed: " << Employee::getName() << endl; 
+}

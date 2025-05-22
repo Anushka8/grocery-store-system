@@ -11,6 +11,7 @@ private:
 public:
     Cashier(int id, string name, double salary, int counternumber);
     void displayDetails() const override;
+    ~Cashier();
 };
 
 #endif

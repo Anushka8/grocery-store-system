@@ -13,6 +13,8 @@ private:
 
 public:
     Employee(int id, string name, double salary);
+    string getName() const;
+    double getSalary() const;
     virtual void displayDetails() const;
     virtual ~Employee();
 };

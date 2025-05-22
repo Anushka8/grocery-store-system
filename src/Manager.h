@@ -11,6 +11,7 @@ private:
 public:
     Manager(int id, string name, double salary, int teamSize);
     void displayDetails() const override;
+    ~Manager();
 };
 
 #endif

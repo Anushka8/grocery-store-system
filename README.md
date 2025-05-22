@@ -29,7 +29,7 @@
 ## Design
 
 - All header and source code files are in `src`.
-- `main` executitble is created in `build`.
+- `main` executible is created in `build`.
 - `Makefile` compiles and links programs
 
 ## Structure

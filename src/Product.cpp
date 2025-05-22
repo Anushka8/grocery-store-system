@@ -20,3 +20,7 @@ void Product::display() const
 {
     cout << "Product: " << name << ", Price: $" << price << endl;
 }
+
+Product::~Product(){
+    cout << "Product destroyed: " << name << endl;
+}

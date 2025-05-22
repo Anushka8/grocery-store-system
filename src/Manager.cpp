@@ -7,7 +7,11 @@ Manager::Manager(int id, string name, double salary, int teamSize)
 
 void Manager::displayDetails() const
 {
-    cout << "Manager ->";
+    cout << "Manager -> ";
     Employee::displayDetails();
     cout << ", Team Size: " << teamSize << endl;
+}
+
+Manager::~Manager() {
+    cout << "Manager destroyed: " << Employee::getName() << endl;
 }

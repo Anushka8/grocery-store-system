@@ -1,15 +1,22 @@
 #include <iostream>
+#include <memory>
+
 #include "Product.h"
 #include "Order.h"
 #include "Employee.h"
 #include "Manager.h"
 #include "Cashier.h"
 
+using namespace std;
+
 int main()
 {
-    Product p1("Apples", 1.99);
-    Product p2("Bread", 2.49);
-    Product p3("Milk", 3.10);
+    shared_ptr<Product> p1 = make_shared<Product>("Apples", 1.99);
+    shared_ptr<Product> p2 = make_shared<Product>("Bread", 2.49);
+    shared_ptr<Product> p3 = make_shared<Product>("Milk", 3.10);
+    // Product p1("Apples", 1.99);
+    // Product p2("Bread", 2.49);
+    // Product p3("Milk", 3.10);
 
     Order order1(1001);
     order1.addProduct(p1);
