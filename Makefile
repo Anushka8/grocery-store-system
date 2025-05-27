@@ -9,7 +9,8 @@ SOURCES = $(SRC_DIR)/main.cpp \
           $(SRC_DIR)/Order.cpp \
           $(SRC_DIR)/Employee.cpp \
           $(SRC_DIR)/Manager.cpp \
-          $(SRC_DIR)/Cashier.cpp
+          $(SRC_DIR)/Cashier.cpp \
+          $(SRC_DIR)/CashierTerminal.cpp
 
 # Object files (change .cpp to .o and put in build/)
 OBJECTS = $(SOURCES:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)

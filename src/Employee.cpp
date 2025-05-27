@@ -21,5 +21,5 @@ void Employee::displayDetails() const
 
 Employee::~Employee()
 {
-    cout << "Employee destroyed: " << name << endl;
+    // cout << "Employee destroyed: " << name << endl;
 }

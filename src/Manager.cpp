@@ -13,5 +13,5 @@ void Manager::displayDetails() const
 }
 
 Manager::~Manager() {
-    cout << "Manager destroyed: " << Employee::getName() << endl;
+    // cout << "Manager destroyed: " << Employee::getName() << endl;
 }

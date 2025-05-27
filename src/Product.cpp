@@ -22,5 +22,5 @@ void Product::display() const
 }
 
 Product::~Product(){
-    cout << "Product destroyed: " << name << endl;
+    // cout << "Product destroyed: " << name << endl;
 }
